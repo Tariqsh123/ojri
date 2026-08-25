@@ -1,254 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Who We Help | Orji Strategies</title>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <nav class="topnav">
-            <a class="brand" href="index.html">
-                <img src="images/strata-logo.png" alt="Orji Strategies">
-            </a>
-            <div class="desktop-nav">
-                <div class="drop">
-                    <a href="who-we-help.html">Who We Help</a>
-                    <div class="drop-menu">
-                        <a href="#">Founders &amp; Business Owners</a>
-                        <a href="#">Workplace &amp; Institutional Leaders</a>
-                        <a href="#">Consultants &amp; Investigators</a>
-                        <a href="#">Boards &amp; Executive Teams</a>
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Who We Help | Orji Strategies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <nav class="topnav" id="topnav">
+        <a class="brand" href="#">
+            <img src="images/strata-logo.png" alt="Orji Strategies" />
+        </a>
+        <div class="desktop-nav">
+            <a href="#">Home</a>
+            <a href="#" class="active">Who We Help</a>
+            <div class="drop">
+                <a href="#">Our Methods <i class="fas fa-chevron-down"></i></a>
+                <div class="drop-menu">
+                    <a href="#">The Small Room</a>
+                    <a href="#">LegacyOS™</a>
+                    <a href="#">HEARTH™</a>
+                    <a href="#">Assessments</a>
+                    <a href="#">Training &amp; Certification</a>
                 </div>
-                <div class="drop">
-                    <a href="#">Our Methods</a>
-                    <div class="drop-menu">
-                        <a href="#">The Small Room</a>
-                        <a href="#">LegacyOS™</a>
-                        <a href="#">HEARTH™</a>
-                        <a href="#">Assessments</a>
-                        <a href="#">Training &amp; Certification</a>
-                    </div>
-                </div>
-                <a href="#">Services</a>
-                <a href="#">Books &amp; Resources</a>
-                <a href="#">Insights</a>
-                <a href="#">About</a>
-                <a class="nav-cta" href="#">Schedule a Consultation</a>
             </div>
-            <button
-                id="menuBtn"
-                class="menu-btn"
-                aria-label="Open menu"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-        <div id="mobileNav" class="mobile-nav">
-            <a href="who-we-help.html">Who We Help</a>
-            <a class="sub" href="#">Founders &amp; Business Owners</a>
-            <a class="sub" href="#">Workplace &amp; Institutional Leaders</a>
-            <a class="sub" href="#">Consultants &amp; Investigators</a>
-            <a class="sub" href="#">Boards &amp; Executive Teams</a>
-            <a href="#">Our Methods</a>
-            <a class="sub" href="#">The Small Room</a>
-            <a class="sub" href="#">LegacyOS™</a>
-            <a class="sub" href="#">HEARTH™</a>
-            <a class="sub" href="#">Assessments</a>
-            <a class="sub" href="#">Training &amp; Certification</a>
-            <a href="#">Services</a>
-            <a href="#">Books &amp; Resources</a>
+            <div class="drop">
+                <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="drop-menu">
+                    <a href="#">The Small Room Consulting</a>
+                    <a href="#">LegacyOS™ Consulting</a>
+                    <a href="#">Training &amp; Workshops</a>
+                    <a href="#">Speaking &amp; Advisory</a>
+                </div>
+            </div>
+            <div class="drop">
+                <a href="#">Books &amp; Resources <i class="fas fa-chevron-down"></i></a>
+                <div class="drop-menu">
+                    <a href="#">Books</a>
+                    <a href="#">Workbooks</a>
+                    <a href="#">Toolkits</a>
+                    <a href="#">Assessments</a>
+                    <a href="#">Resource Library</a>
+                </div>
+            </div>
             <a href="#">Insights</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
+            <div class="nav-icons">
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <a class="nav-cta" href="#">Schedule a Consultation</a>
         </div>
-        <main>
-            <!-- HERO -->
-            <section class="page-hero" style="background: var(--charcoal); color: #fff; padding: 112px 0 82px;">
-                <div class="wrap">
-                    <div class="breadcrumb"><a href="index.html">Home</a> / Who We Help</div>
-                    <h1 class="display" style="color: #fff;">Who We Help</h1>
-                    <p class="lead" style="color: rgba(255,255,255,0.66); max-width: 780px;">We work with founders, institutional leaders, investigators, boards, and professional practices who share a common goal: building organizations that are fair enough to trust and strong enough to endure.</p>
-                </div>
-            </section>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-            <!-- PRIMARY AUDIENCES -->
-            <section class="disciplines">
-                <div class="wrap">
-                    <div class="split-head reveal">
-                        <div>
-                            <div class="kicker">Primary audiences</div>
-                            <h2 class="h2">Leaders who face <em>foundational challenges.</em></h2>
-                        </div>
-                        <p class="lead">Our work is designed for those who must make critical decisions about fairness, continuity, and institutional strength.</p>
-                    </div>
-                    <div class="disc-grid reveal">
-                        <div class="disc" style="background: var(--ivory);">
-                            <div class="n">01</div>
-                            <h3>Founders &amp; Business Owners</h3>
-                            <p>Your business depends heavily on you. Knowledge is undocumented, governance is weak, succession is uncertain. You need an organization that can operate without your constant presence.</p>
-                            <span style="margin-top: auto; padding-top: 18px;">→ Explore LegacyOS™</span>
-                        </div>
-                        <div class="disc" style="background: var(--ivory);">
-                            <div class="n">02</div>
-                            <h3>Workplace &amp; Institutional Leaders</h3>
-                            <p>You are responsible for procedural fairness, investigations, and defensible decisions. Inconsistent processes, poor credibility assessments, and weak documentation create institutional risk.</p>
-                            <span style="margin-top: auto; padding-top: 18px;">→ Explore The Small Room</span>
-                        </div>
-                        <div class="disc" style="background: var(--ivory);">
-                            <div class="n">03</div>
-                            <h3>Boards &amp; Executive Teams</h3>
-                            <p>You need governance design, leadership pipeline development, and strategic continuity. Your role is to ensure the organization outlasts individual leaders and maintains public trust.</p>
-                            <span style="margin-top: auto; padding-top: 18px;">→ Explore Advisory</span>
-                        </div>
-                        <div class="disc" style="background: var(--ivory);">
-                            <div class="n">04</div>
-                            <h3>Consultants &amp; Professional Practices</h3>
-                            <p>You want to bring our methods into your own practice. Certification, licensing, and institutional partnerships allow you to deliver The Orji Methods™ with integrity.</p>
-                            <span style="margin-top: auto; padding-top: 18px;">→ Explore Certification</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#">Home</a>
+        <a href="#" class="active">Who We Help</a>
+        <a class="sub" href="#">Founders &amp; Business Owners</a>
+        <a class="sub" href="#">Workplace &amp; Institutional Leaders</a>
+        <a class="sub" href="#">Consultants &amp; Investigators</a>
+        <a class="sub" href="#">Boards &amp; Executive Teams</a>
+        <a href="#">Our Methods</a>
+        <a class="sub" href="#">The Small Room</a>
+        <a class="sub" href="#">LegacyOS™</a>
+        <a class="sub" href="#">HEARTH™</a>
+        <a class="sub" href="#">Assessments</a>
+        <a class="sub" href="#">Training &amp; Certification</a>
+        <a href="#">Services</a>
+        <a class="sub" href="#">The Small Room Consulting</a>
+        <a class="sub" href="#">LegacyOS™ Consulting</a>
+        <a class="sub" href="#">Training &amp; Workshops</a>
+        <a class="sub" href="#">Speaking &amp; Advisory</a>
+        <a href="#">Books &amp; Resources</a>
+        <a class="sub" href="#">Books</a>
+        <a class="sub" href="#">Workbooks</a>
+        <a class="sub" href="#">Toolkits</a>
+        <a class="sub" href="#">Assessments</a>
+        <a class="sub" href="#">Resource Library</a>
+        <a href="#">Insights</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div style="display: flex; gap: 20px; padding: 16px 0 8px; border-bottom: 1px solid rgba(178,138,76,0.06);">
+            <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-search"></i></a>
+            <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <a href="#" style="color: var(--gold); font-weight: 600; margin-top: 8px;">Schedule a Consultation</a>
+    </div>
 
-            <!-- DETAILED BREAKDOWN -->
-            <section class="experience" style="background: var(--white);">
-                <div class="wrap">
-                    <div class="split-head reveal">
-                        <div>
-                            <div class="kicker">Who we serve in depth</div>
-                            <h2 class="h2">Every audience has <em>distinct needs.</em></h2>
-                        </div>
-                        <p class="lead">We tailor our approach to the specific challenges of each group, while keeping the engagement anchored to the owner’s or leader’s decision.</p>
-                    </div>
-                    <div class="case-grid reveal" style="border-left: 0; border-top: 0; grid-template-columns: 1fr 1fr;">
-                        <div class="case" style="border-left: 0; border-top: 0; padding: 30px 0; min-height: auto;">
-                            <div class="case-type">Founders &amp; Business Owners</div>
-                            <h3>Founder dependency · undocumented knowledge · succession uncertainty</h3>
-                            <p>We help you identify what your organization cannot afford to lose, document critical know‑how, design governance structures, and create a leadership pipeline. The result: a business that runs without you.</p>
-                            <div class="case-tags">
-                                <span>Founder Dependency Assessment™</span>
-                                <span>Succession Planning</span>
-                                <span>Governance Design</span>
-                            </div>
-                        </div>
-                        <div class="case" style="border-left: 0; border-top: 0; padding: 30px 0; min-height: auto;">
-                            <div class="case-type">Workplace &amp; Institutional Leaders</div>
-                            <h3>Procedural fairness · investigation quality · defensible decisions</h3>
-                            <p>We provide frameworks for fair hearings, credibility assessment, investigation planning, and documentation. Our methods help you restore trust and reduce institutional liability.</p>
-                            <div class="case-tags">
-                                <span>The Small Room</span>
-                                <span>HEARTH™</span>
-                                <span>Fair Process Audit</span>
-                            </div>
-                        </div>
-                        <div class="case" style="border-left: 0; border-top: 0; padding: 30px 0; min-height: auto;">
-                            <div class="case-type">Boards &amp; Executive Teams</div>
-                            <h3>Governance · leadership pipeline · organizational trust</h3>
-                            <p>We design decision‑making structures, board processes, and leadership development systems that ensure continuity and accountability. We also advise on strategic risk and reputation.</p>
-                            <div class="case-tags">
-                                <span>Board Advisory</span>
-                                <span>Leadership Pipeline</span>
-                                <span>Strategic Continuity</span>
-                            </div>
-                        </div>
-                        <div class="case" style="border-left: 0; border-top: 0; padding: 30px 0; min-height: auto;">
-                            <div class="case-type">Consultants &amp; Professional Practices</div>
-                            <h3>Certification · licensing · partnership</h3>
-                            <p>Become a certified practitioner of LegacyOS™, The Small Room, or HEARTH™. We offer licensing programs, institutional partnerships, and ongoing support to help you deliver our methods effectively.</p>
-                            <div class="case-tags">
-                                <span>Certification</span>
-                                <span>Licensing</span>
-                                <span>Practitioner Network</span>
-                            </div>
-                        </div>
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=900&fit=crop&crop=center&q=80'); background-size: cover; background-position: center 30%; background-attachment: fixed; min-height: 60vh; padding: 60px 0 70px;">
+            <div class="wrap hero-grid">
+                <div class="reveal">
+                    <div class="kicker">Who we serve</div>
+                    <h1 class="display">Serving leaders who build <em>enduring institutions.</em></h1>
+                    <p class="hero-copy" style="max-width: 720px; margin: 24px auto 0;">We work with founders, institutional leaders, investigators, and boards across sectors and geographies — helping them build organizations that are fair enough to trust and strong enough to endure.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#">Schedule a Consultation</a>
+                        <a class="btn btn-outline-light" href="#">Explore Our Methods</a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- SECONDARY AUDIENCES -->
-            <section class="industry-sec" style="background: var(--ivory);">
-                <div class="wrap">
-                    <div class="split-head reveal">
-                        <div>
-                            <div class="kicker">Secondary audiences</div>
-                            <h2 class="h2">Also serving <em>broader communities.</em></h2>
-                        </div>
-                        <p class="lead">Our methods and resources are valuable to a wide range of professionals and organizations.</p>
-                    </div>
-                    <div class="industry-grid reveal" style="grid-template-columns: repeat(3, 1fr);">
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">01</div>
-                            <h3>Mediators &amp; Attorneys</h3>
-                            <p>Credibility analysis, due process, and fair‑hearing frameworks for dispute resolution and legal practice.</p>
-                        </div>
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">02</div>
-                            <h3>Human Resources &amp; EEO Professionals</h3>
-                            <p>Investigation templates, policy evaluation, and training to ensure compliance and fairness.</p>
-                        </div>
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">03</div>
-                            <h3>Business Schools &amp; Universities</h3>
-                            <p>Teaching materials, case studies, and guest lectures on organizational continuity and fairness.</p>
-                        </div>
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">04</div>
-                            <h3>Conference &amp; Event Organizers</h3>
-                            <p>Keynotes, panels, and workshops on leadership, governance, and institutional trust.</p>
-                        </div>
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">05</div>
-                            <h3>Publishers &amp; Journalists</h3>
-                            <p>Expert commentary, book reviews, and author interviews on topics of fairness and continuity.</p>
-                        </div>
-                        <div class="industry-link" style="border-bottom: 1px solid rgba(30,30,30,0.16);">
-                            <div class="idx">06</div>
-                            <h3>Nonprofits &amp; Community Organizations</h3>
-                            <p>Building governance, preserving institutional memory, and ensuring mission continuity.</p>
-                        </div>
-                    </div>
+        <!-- ===== AUDIENCE OVERVIEW ===== -->
+        <section class="who-help" style="padding: 72px 0 56px;">
+            <div class="wrap">
+                <div class="section-intro reveal" style="max-width: 800px; margin-bottom: 40px;">
+                    <div class="kicker">Four audiences, one mission</div>
+                    <h2 class="h2">We help you solve <em>your most critical organizational challenges.</em></h2>
+                    <p class="lead" style="max-width: 680px;">Whether you're building a business that can outlast you, or ensuring your institution's decisions are fair and defensible — we have a method for you.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- CALL TO ACTION -->
-            <section class="contact" style="background: var(--charcoal); color: #fff; padding: 80px 0;">
-                <div class="wrap contact-grid reveal">
+        <!-- ===== AUDIENCE 01: FOUNDERS ===== -->
+        <section style="padding: 0 0 64px; background: var(--ivory);">
+            <div class="wrap">
+                <div class="audience-block reveal" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 5vw; align-items: center; background: var(--white); border-radius: var(--radius); padding: 48px 50px; box-shadow: var(--shadow-soft);">
                     <div>
-                        <div class="kicker" style="color: var(--gold);">Find your path</div>
-                        <h2 class="h2" style="color: #fff;">Which challenge <em>do you face?</em></h2>
-                        <p class="lead" style="color: rgba(255,255,255,0.64); margin-top: 18px;">We are here to help you build an organization that makes fair decisions and endures beyond the present moment. Schedule a confidential conversation.</p>
+                        <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px;">Primary Audience</span>
+                        <h3 style="font-family: var(--serif); font-size: 34px; font-weight: 400; line-height: 1.1; margin-bottom: 12px;">Founders &amp; Business Owners</h3>
+                        <p style="font-size: 15px; line-height: 1.7; color: var(--muted-gray);"><strong style="color: var(--charcoal);">Who they are:</strong> Founders whose businesses depend heavily on them. Family-owned and multigenerational businesses. Small and midsize companies preparing for growth or succession. African and emerging-market enterprises. Immigrant and diaspora-owned businesses. Professional practices, nonprofits, ministries, and community organizations.</p>
                     </div>
-                    <div class="contact-actions">
-                        <a class="btn gold" href="#">Schedule a Consultation</a>
-                        <a class="contact-link" href="#">Take an Assessment</a>
-                        <a class="contact-link" href="#">Explore Our Methods</a>
+                    <div>
+                        <h4 style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-gray); margin-bottom: 12px;">Their principal concerns</h4>
+                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px;">
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Founder dependency</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Succession uncertainty</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Undocumented knowledge</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Weak governance</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Leadership gaps</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Business cannot operate without founder</li>
+                        </ul>
+                        <div style="margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap;">
+                            <a class="btn btn-primary" href="#" style="padding: 10px 28px; font-size: 11px;">Explore LegacyOS™</a>
+                            <a class="text-link" href="#" style="font-size: 11px;">Take Founder Dependency Assessment</a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
 
-        <footer>
-            <div>© 2026 Orji Strategies LLC · United States</div>
-            <div>Fair Decisions. Enduring Organizations. Powered by The Orji Methods™</div>
-        </footer>
+        <!-- ===== AUDIENCE 02: WORKPLACE LEADERS ===== -->
+        <section style="padding: 0 0 64px; background: var(--warm-ivory);">
+            <div class="wrap">
+                <div class="audience-block reveal" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 5vw; align-items: center; background: var(--white); border-radius: var(--radius); padding: 48px 50px; box-shadow: var(--shadow-soft);">
+                    <div>
+                        <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px;">Primary Audience</span>
+                        <h3 style="font-family: var(--serif); font-size: 34px; font-weight: 400; line-height: 1.1; margin-bottom: 12px;">Workplace &amp; Institutional Leaders</h3>
+                        <p style="font-size: 15px; line-height: 1.7; color: var(--muted-gray);"><strong style="color: var(--charcoal);">Who they are:</strong> Human resources and EEO professionals. Workplace investigators. Employee-relations and labor-relations professionals. Public agencies and government departments. Corporate legal and compliance teams. Hearing officers and administrative decision-makers. Universities, nonprofits, and professional associations. Executives responsible for organizational trust and accountability.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-gray); margin-bottom: 12px;">Their principal concerns</h4>
+                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px;">
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Procedural fairness</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Inconsistent investigations</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Credibility analysis</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Due process failures</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Biased decision-making</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Weak documentation</li>
+                        </ul>
+                        <div style="margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap;">
+                            <a class="btn btn-primary" href="#" style="padding: 10px 28px; font-size: 11px;">Explore The Small Room</a>
+                            <a class="text-link" href="#" style="font-size: 11px;">Take Fair Process Audit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <a
-            class="wa"
-            href="#"
-            target="_blank"
-            rel="noopener"
-            aria-label="WhatsApp Orji Strategies"
-        >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor" d="M12.04 2C6.52 2 2.03 6.49 2.03 12.01c0 1.76.46 3.48 1.33 5L2 22l5.12-1.34a9.98 9.98 0 0 0 4.92 1.25h.01c5.52 0 10.01-4.49 10.01-10.01C22.06 6.49 17.57 2 12.04 2Zm5.84 14.12c-.25.7-1.47 1.34-2.02 1.42-.52.08-1.18.12-1.9-.12-.44-.14-1.01-.33-1.74-.65-3.06-1.32-5.05-4.39-5.2-4.59-.15-.2-1.24-1.65-1.24-3.15 0-1.5.78-2.24 1.06-2.55.28-.31.61-.39.81-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.15.13.33.02.53-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.3.31-.13.61.18.3.78 1.28 1.68 2.08 1.15 1.03 2.12 1.35 2.42 1.5.3.15.48.13.66-.08.18-.2.76-.89.96-1.2.2-.31.41-.25.69-.15.28.1 1.78.84 2.08.99.3.15.51.23.58.36.08.13.08.74-.17 1.44Z"></path>
-            </svg>
-        </a>
-        <script src="js/site.js"></script>
-    </body>
+        <!-- ===== AUDIENCE 03: INVESTIGATORS ===== -->
+        <section style="padding: 0 0 64px; background: var(--ivory);">
+            <div class="wrap">
+                <div class="audience-block reveal" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 5vw; align-items: center; background: var(--white); border-radius: var(--radius); padding: 48px 50px; box-shadow: var(--shadow-soft);">
+                    <div>
+                        <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px;">Secondary Audience</span>
+                        <h3 style="font-family: var(--serif); font-size: 34px; font-weight: 400; line-height: 1.1; margin-bottom: 12px;">Investigators &amp; Decision-Makers</h3>
+                        <p style="font-size: 15px; line-height: 1.7; color: var(--muted-gray);"><strong style="color: var(--charcoal);">Who they are:</strong> Workplace investigators, hearing officers, administrative judges, EEO investigators, internal review officers, compliance professionals, and anyone responsible for making defensible decisions in organizational settings.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-gray); margin-bottom: 12px;">Their principal concerns</h4>
+                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px;">
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Credibility assessment</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Hearing process design</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Defensible decisions</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Documentation quality</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Procedural fairness</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Institutional trust</li>
+                        </ul>
+                        <div style="margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap;">
+                            <a class="btn btn-primary" href="#" style="padding: 10px 28px; font-size: 11px;">Explore Training</a>
+                            <a class="text-link" href="#" style="font-size: 11px;">Explore HEARTH™ Method</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== AUDIENCE 04: BOARDS ===== -->
+        <section style="padding: 0 0 72px; background: var(--warm-ivory);">
+            <div class="wrap">
+                <div class="audience-block reveal" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 5vw; align-items: center; background: var(--white); border-radius: var(--radius); padding: 48px 50px; box-shadow: var(--shadow-soft);">
+                    <div>
+                        <span style="font-size: 10px; font-weight: 600; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; display: block; margin-bottom: 8px;">Secondary Audience</span>
+                        <h3 style="font-family: var(--serif); font-size: 34px; font-weight: 400; line-height: 1.1; margin-bottom: 12px;">Boards &amp; Executive Teams</h3>
+                        <p style="font-size: 15px; line-height: 1.7; color: var(--muted-gray);"><strong style="color: var(--charcoal);">Who they are:</strong> Board directors, executive teams, governance committees, and senior leaders responsible for organizational oversight, strategy, and long-term institutional health.</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted-gray); margin-bottom: 12px;">Their principal concerns</h4>
+                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px;">
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Governance design</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Leadership pipeline</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Organizational trust</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Strategic continuity</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Succession planning</li>
+                            <li style="font-size: 13.5px; color: var(--muted-gray); padding: 6px 0; border-bottom: 1px solid rgba(178,138,76,0.06);"><i class="fas fa-circle" style="font-size: 6px; color: var(--gold); margin-right: 10px; vertical-align: middle;"></i>Institutional resilience</li>
+                        </ul>
+                        <div style="margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap;">
+                            <a class="btn btn-primary" href="#" style="padding: 10px 28px; font-size: 11px;">Explore Advisory</a>
+                            <a class="text-link" href="#" style="font-size: 11px;">Explore LegacyOS™</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CROSS-SECTOR ===== -->
+        <section style="padding: 56px 0 72px; background: var(--ivory);">
+            <div class="wrap">
+                <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <div class="kicker">Sectors &amp; geographies</div>
+                    <h2 class="h2" style="font-size: clamp(28px, 3.8vw, 44px);">We work across <em>every sector and continent.</em></h2>
+                    <p class="lead" style="margin: 16px auto 0; max-width: 620px;">From family businesses in Africa to public agencies in the United States, from corporate legal teams to community nonprofits — our methods are designed for leaders everywhere.</p>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; margin-top: 28px;">
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Family Businesses</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Corporate Legal &amp; Compliance</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Public Agencies</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Nonprofits &amp; Ministries</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Professional Practices</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Universities &amp; Associations</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Emerging-Market Enterprises</span>
+                        <span style="font-size: 12px; color: var(--muted-gray); background: var(--white); padding: 6px 22px; border-radius: 40px; box-shadow: var(--shadow-soft);">Diaspora-Owned Businesses</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FINAL CTA ===== -->
+        <section class="cta-section" style="background: var(--charcoal); color: var(--white); padding: 72px 0; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -30%; left: -10%; width: 50%; height: 160%; background: radial-gradient(ellipse, rgba(178, 138, 76, 0.03) 0%, transparent 70%); pointer-events: none;"></div>
+            <div class="wrap cta-grid" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 5vw; align-items: center; position: relative; z-index: 1;">
+                <div class="reveal">
+                    <div class="kicker">Start a conversation</div>
+                    <h2 class="h2" style="color: var(--white); font-family: var(--serif); font-size: clamp(28px, 3.8vw, 44px); line-height: 1.08; font-weight: 400;">What is your organization depending on <em style="color: var(--gold-light); font-style: italic;">that it cannot afford to lose?</em></h2>
+                    <p class="lead" style="color: rgba(255, 255, 255, 0.5); font-size: 16px; line-height: 1.75; max-width: 600px; margin-top: 14px;">Take an assessment, schedule a consultation, or explore our resource library to begin building a fairer, more enduring organization.</p>
+                </div>
+                <div class="cta-actions reveal reveal-delay-1" style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+                    <a class="btn btn-primary" href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 36px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; border-radius: 60px; border: none; cursor: pointer; transition: var(--transition); text-decoration: none; font-family: var(--sans); background: var(--gold); color: var(--white); box-shadow: 0 4px 20px rgba(178, 138, 76, 0.25); width: 100%; justify-content: center;">Schedule a Consultation</a>
+                    <a class="btn btn-outline-light" href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 36px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; border-radius: 60px; border: 1.5px solid rgba(255, 255, 255, 0.30); cursor: pointer; transition: var(--transition); text-decoration: none; font-family: var(--sans); background: transparent; color: var(--white); width: 100%; justify-content: center;">Take an Assessment</a>
+                    <a class="link" href="#" style="color: rgba(255, 255, 255, 0.35); font-size: 12px; transition: var(--transition); border-bottom: 1px solid rgba(255, 255, 255, 0.06); padding-bottom: 4px;">Explore the Resource Library</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER — WHITE THEME (NO HOVER SHADOWS) ===== -->
+    <footer style="background: var(--white); color: var(--muted-gray); padding: 56px 5vw 28px; border-top: 1px solid rgba(178, 138, 76, 0.08); box-shadow: 0 -2px 24px rgba(0, 0, 0, 0.02);">
+        <div class="footer-grid" style="display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; max-width: 1160px; margin: 0 auto; padding-bottom: 40px; border-bottom: 1px solid rgba(178, 138, 76, 0.08);">
+            <!-- Column 1: Brand -->
+            <div class="footer-col">
+                <img src="images/strata-logo.png" alt="Orji Strategies" class="footer-logo" style="height: 44px; width: auto; margin-bottom: 14px; display: block;">
+                <p class="brand-tagline" style="font-size: 13px; color: var(--muted-gray); max-width: 280px; line-height: 1.6; font-weight: 400; opacity: 0.75;">Fair Decisions. Enduring Organizations. Powered by The Orji Methods™</p>
+                <div style="margin-top: 18px; display: flex; gap: 12px;">
+                    <span style="font-size: 11px; color: var(--muted-gray); opacity: 0.5;">© 2026 Orji Strategies LLC</span>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4 style="color: var(--charcoal); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 18px; font-family: var(--sans);">Quick Links</h4>
+                <a href="#" style="font-size: 13px; line-height: 2; color: var(--muted-gray); display: block; transition: var(--transition);">About Us</a>
+                <a href="#" style="font-size: 13px; line-height: 2; color: var(--muted-gray); display: block; transition: var(--transition);">Our Methods</a>
+                <a href="#" style="font-size: 13px; line-height: 2; color: var(--muted-gray); display: block; transition: var(--transition);">Services</a>
+                <a href="#" style="font-size: 13px; line-height: 2; color: var(--muted-gray); display: block; transition: var(--transition);">Insights</a>
+                <a href="#" style="font-size: 13px; line-height: 2; color: var(--muted-gray); display: block; transition: var(--transition);">Contact</a>
+            </div>
+
+            <!-- Column 3: Contact -->
+            <div class="footer-col">
+                <h4 style="color: var(--charcoal); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 18px; font-family: var(--sans);">Contact</h4>
+                <div class="contact-item" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px; font-size: 13px; color: var(--muted-gray); line-height: 1.6;">
+                    <i class="fas fa-envelope" style="width: 18px; color: var(--gold); font-size: 14px; flex-shrink: 0;"></i>
+                    <span>info@orjistrategies.com</span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px; font-size: 13px; color: var(--muted-gray); line-height: 1.6;">
+                    <i class="fas fa-phone-alt" style="width: 18px; color: var(--gold); font-size: 14px; flex-shrink: 0;"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item" style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px; font-size: 13px; color: var(--muted-gray); line-height: 1.6;">
+                    <i class="fas fa-map-marker-alt" style="width: 18px; color: var(--gold); font-size: 14px; flex-shrink: 0;"></i>
+                    <span>United States</span>
+                </div>
+                <div class="footer-social" style="display: flex; gap: 10px; margin-top: 16px;">
+                    <a href="#" aria-label="LinkedIn" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ivory); color: var(--muted-gray); transition: var(--transition); font-size: 15px; border: 1px solid rgba(178, 138, 76, 0.06);"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ivory); color: var(--muted-gray); transition: var(--transition); font-size: 15px; border: 1px solid rgba(178, 138, 76, 0.06);"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ivory); color: var(--muted-gray); transition: var(--transition); font-size: 15px; border: 1px solid rgba(178, 138, 76, 0.06);"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Goodreads" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ivory); color: var(--muted-gray); transition: var(--transition); font-size: 15px; border: 1px solid rgba(178, 138, 76, 0.06);"><i class="fab fa-goodreads-g"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-col">
+                <h4 style="color: var(--charcoal); font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 18px; font-family: var(--sans);">Stay Informed</h4>
+                <p style="font-size: 13px; line-height: 1.6; opacity: 0.7; margin-bottom: 14px;">Get insights on fair decisions and enduring organizations.</p>
+                <div class="newsletter-wrap" style="display: flex; gap: 8px; margin-top: 4px;">
+                    <input type="email" placeholder="Your email address" aria-label="Email for newsletter" style="background: var(--ivory); border: 1px solid rgba(178, 138, 76, 0.10); padding: 10px 16px; border-radius: 40px; font-size: 12px; color: var(--charcoal); flex: 1; min-width: 100px; font-family: var(--sans); transition: var(--transition); outline: none;">
+                    <button style="background: var(--charcoal); border: none; padding: 10px 20px; border-radius: 40px; color: var(--white); font-weight: 600; font-size: 11px; cursor: pointer; transition: var(--transition); font-family: var(--sans); letter-spacing: 0.03em; white-space: nowrap;">Subscribe</button>
+                </div>
+                <p style="font-size: 10px; opacity: 0.4; margin-top: 10px; line-height: 1.4;">No spam. Unsubscribe anytime.</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; max-width: 1160px; margin: 0 auto; padding-top: 24px; font-size: 11px; color: var(--muted-gray); opacity: 0.5;">
+            <span>© 2026 Orji Strategies LLC · United States</span>
+            <div class="footer-legal" style="display: flex; gap: 24px;">
+                <a href="#" style="color: var(--muted-gray); transition: var(--transition); opacity: 0.6;">Privacy Policy</a>
+                <a href="#" style="color: var(--muted-gray); transition: var(--transition); opacity: 0.6;">Terms of Service</a>
+                <a href="#" style="color: var(--muted-gray); transition: var(--transition); opacity: 0.6;">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP ===== -->
+    <a class="wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Orji Strategies" style="position: fixed; right: 24px; bottom: 24px; width: 52px; height: 52px; border-radius: 50%; background: #25D366; color: var(--white); display: flex; align-items: center; justify-content: center; z-index: 80; box-shadow: 0 4px 24px rgba(37, 211, 102, 0.25); transition: var(--transition);">
+        <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 26px; height: 26px; display: block;">
+            <path fill="currentColor" d="M12.04 2C6.52 2 2.03 6.49 2.03 12.01c0 1.76.46 3.48 1.33 5L2 22l5.12-1.34a9.98 9.98 0 0 0 4.92 1.25h.01c5.52 0 10.01-4.49 10.01-10.01C22.06 6.49 17.57 2 12.04 2Zm5.84 14.12c-.25.7-1.47 1.34-2.02 1.42-.52.08-1.18.12-1.9-.12-.44-.14-1.01-.33-1.74-.65-3.06-1.32-5.05-4.39-5.2-4.59-.15-.2-1.24-1.65-1.24-3.15 0-1.5.78-2.24 1.06-2.55.28-.31.61-.39.81-.39.2 0 .41 0 .59.01.19.01.44-.07.69.53.25.61.86 2.1.94 2.25.08.15.13.33.02.53-.1.2-.15.33-.3.51-.15.18-.32.4-.46.54-.15.15-.3.31-.13.61.18.3.78 1.28 1.68 2.08 1.15 1.03 2.12 1.35 2.42 1.5.3.15.48.13.66-.08.18-.2.76-.89.96-1.2.2-.31.41-.25.69-.15.28.1 1.78.84 2.08.99.3.15.51.23.58.36.08.13.08.74-.17 1.44Z"></path>
+        </svg>
+    </a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        menuBtn.addEventListener('click', function() {
+            this.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+            this.setAttribute('aria-expanded', mobileNav.classList.contains('open'));
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('open');
+                mobileNav.classList.remove('open');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Nav shadow
+        const nav = document.getElementById('topnav');
+        window.addEventListener('scroll', function() {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        });
+
+        // Reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.10, rootMargin: '0px 0px -30px 0px' });
+        reveals.forEach(el => revealObserver.observe(el));
+    </script>
+
+</body>
 </html>
