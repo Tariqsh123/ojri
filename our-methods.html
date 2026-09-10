@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,20 +10,21 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         /* === Refined Tab Styles === */
+        
         .methods-tab-wrapper {
             display: flex;
             gap: 40px;
             align-items: flex-start;
             margin-top: 8px;
         }
-
+        
         .methods-tabs {
             flex: 0 0 200px;
             display: flex;
             flex-direction: column;
             gap: 2px;
         }
-
+        
         .methods-tabs .tab-btn {
             display: block;
             width: 100%;
@@ -39,17 +41,17 @@
             transition: all 0.2s ease;
             line-height: 1.3;
         }
-
+        
         .methods-tabs .tab-btn:hover {
             color: var(--charcoal);
         }
-
+        
         .methods-tabs .tab-btn.active {
             color: var(--charcoal);
             border-bottom-color: var(--gold);
             font-weight: 600;
         }
-
+        
         .methods-tabs .tab-btn .tab-label small {
             display: block;
             font-weight: 400;
@@ -58,7 +60,7 @@
             opacity: 0.6;
             margin-top: 1px;
         }
-
+        
         .tab-content-panel {
             flex: 1;
             background: var(--white);
@@ -67,26 +69,31 @@
             border-radius: 6px;
             min-height: 420px;
         }
-
+        
         .tab-content-panel .panel-content {
             display: none;
             animation: fadeIn 0.3s ease;
         }
+        
         .tab-content-panel .panel-content.active {
             display: block;
         }
-
+        
         @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
-
+        
         .panel-content .method-header {
             margin-bottom: 18px;
             border-bottom: 1px solid #e2dbd2;
             padding-bottom: 12px;
         }
-
+        
         .panel-content .method-header .badge {
             display: inline-block;
             font-size: 10px;
@@ -98,7 +105,7 @@
             padding: 0;
             margin-bottom: 2px;
         }
-
+        
         .panel-content .method-header h2 {
             font-family: var(--serif);
             font-size: 26px;
@@ -106,25 +113,25 @@
             margin: 0;
             line-height: 1.1;
         }
-
+        
         .panel-content .method-header h2 em {
             color: var(--gold);
             font-style: italic;
         }
-
+        
         .panel-content .method-body {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
-
+        
         .panel-content .method-body .text-content p {
             font-size: 15px;
             line-height: 1.7;
             color: var(--muted-gray);
             margin-bottom: 12px;
         }
-
+        
         .panel-content .method-body .text-content ul {
             list-style: none;
             padding: 0;
@@ -133,7 +140,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 2px 24px;
         }
-
+        
         .panel-content .method-body .text-content ul li {
             font-size: 13.5px;
             line-height: 1.6;
@@ -144,12 +151,12 @@
             align-items: center;
             gap: 8px;
         }
-
+        
         .panel-content .method-body .text-content ul li i {
             color: var(--gold);
             font-size: 7px;
         }
-
+        
         .panel-content .method-body .image-content {
             margin-top: 8px;
             border-radius: 4px;
@@ -158,13 +165,13 @@
             border: 1px solid #e2dbd2;
             max-width: 100%;
         }
-
+        
         .panel-content .method-body .image-content img {
             width: 100%;
             height: auto;
             display: block;
         }
-
+        
         .panel-content .method-footer {
             margin-top: 24px;
             padding-top: 16px;
@@ -175,13 +182,13 @@
             flex-wrap: wrap;
             gap: 8px;
         }
-
+        
         .panel-content .method-footer .tag-group {
             display: flex;
             gap: 4px;
             flex-wrap: wrap;
         }
-
+        
         .panel-content .method-footer .tag-group span {
             font-size: 10px;
             text-transform: uppercase;
@@ -191,8 +198,8 @@
             border-radius: 20px;
             color: var(--muted-gray);
         }
-
         /* Simple centered action link */
+        
         .panel-content .action-link {
             display: inline-block;
             margin-top: 12px;
@@ -203,19 +210,20 @@
             padding-bottom: 2px;
             transition: 0.2s ease;
         }
+        
         .panel-content .action-link:hover {
             color: var(--gold-rich);
             border-color: var(--gold-rich);
         }
-
         /* Assessments - simple bordered cards */
+        
         .panel-content .assessment-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-top: 6px;
         }
-
+        
         .panel-content .assessment-grid .assessment-card {
             padding: 18px 22px;
             border-radius: 4px;
@@ -223,26 +231,26 @@
             border: 1px solid #e2dbd2;
             transition: 0.2s ease;
         }
-
+        
         .panel-content .assessment-grid .assessment-card:hover {
             background: var(--white);
             border-color: var(--gold);
         }
-
+        
         .panel-content .assessment-grid .assessment-card h4 {
             font-family: var(--serif);
             font-size: 17px;
             font-weight: 400;
             margin-bottom: 2px;
         }
-
+        
         .panel-content .assessment-grid .assessment-card p {
             font-size: 13px;
             line-height: 1.5;
             color: var(--muted-gray);
             margin-bottom: 10px;
         }
-
+        
         .panel-content .assessment-grid .assessment-card .btn-sm {
             font-size: 10px;
             padding: 5px 18px;
@@ -256,19 +264,19 @@
             letter-spacing: 0.03em;
             font-family: var(--sans);
         }
-
+        
         .panel-content .assessment-grid .assessment-card .btn-sm:hover {
             background: var(--gold);
         }
-
         /* Training - simple bordered cards */
+        
         .panel-content .training-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 16px;
             margin-top: 6px;
         }
-
+        
         .panel-content .training-grid .training-item {
             padding: 18px 22px;
             border-radius: 4px;
@@ -276,25 +284,25 @@
             border: 1px solid #e2dbd2;
             transition: 0.2s ease;
         }
-
+        
         .panel-content .training-grid .training-item:hover {
             background: var(--white);
             border-color: var(--gold);
         }
-
+        
         .panel-content .training-grid .training-item h4 {
             font-family: var(--serif);
             font-size: 17px;
             font-weight: 400;
             margin-bottom: 2px;
         }
-
+        
         .panel-content .training-grid .training-item p {
             font-size: 13px;
             line-height: 1.5;
             color: var(--muted-gray);
         }
-
+        
         .panel-content .training-grid .training-item .price-tag {
             display: inline-block;
             margin-top: 8px;
@@ -303,14 +311,58 @@
             color: var(--gold);
             letter-spacing: 0.03em;
         }
-
+        /* Root-to-Crown stages */
+        
+        .stage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 18px;
+        }
+        
+        .stage-card {
+            padding: 20px 22px 18px;
+            border-radius: 6px;
+            background: #faf8f5;
+            border: 1px solid #e2dbd2;
+            transition: 0.2s ease;
+        }
+        
+        .stage-card:hover {
+            background: var(--white);
+            border-color: var(--gold);
+        }
+        
+        .stage-card .stage-number {
+            display: inline-block;
+            font-family: var(--serif);
+            font-size: 12px;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            margin-bottom: 6px;
+        }
+        
+        .stage-card h4 {
+            font-family: var(--serif);
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 8px;
+            color: var(--charcoal);
+        }
+        
+        .stage-card p {
+            font-size: 13.5px;
+            line-height: 1.65;
+            color: var(--muted-gray);
+            margin: 0;
+        }
         /* Responsive */
+        
         @media (max-width: 1024px) {
             .methods-tab-wrapper {
                 flex-direction: column;
                 gap: 24px;
             }
-
             .methods-tabs {
                 flex: 1;
                 width: 100%;
@@ -320,7 +372,6 @@
                 padding-bottom: 8px;
                 gap: 4px 16px;
             }
-
             .methods-tabs .tab-btn {
                 flex: 0 0 auto;
                 width: auto;
@@ -329,85 +380,79 @@
                 text-align: left;
                 font-size: 13px;
             }
-
             .methods-tabs .tab-btn.active {
                 border-bottom-color: var(--gold);
             }
-
             .methods-tabs .tab-btn .tab-label small {
                 display: none;
             }
-
             .tab-content-panel {
                 padding: 24px 20px 28px;
             }
         }
-
+        
         @media (max-width: 768px) {
             .panel-content .method-body .text-content ul {
                 grid-template-columns: 1fr;
             }
-
             .panel-content .assessment-grid,
-            .panel-content .training-grid {
+            .panel-content .training-grid,
+            .stage-grid {
                 grid-template-columns: 1fr;
             }
-
             .panel-content .method-header h2 {
                 font-size: 22px;
             }
         }
-
+        
         @media (max-width: 600px) {
             .methods-tabs .tab-btn {
                 font-size: 12px;
                 padding: 4px 0;
             }
-
             .tab-content-panel {
                 padding: 16px 14px 20px;
             }
-
             .panel-content .method-header h2 {
                 font-size: 20px;
             }
-
             .panel-content .method-body .text-content p {
                 font-size: 14px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- ===== NAV ===== -->
-     <nav class="topnav" id="topnav">
-    <a class="brand" href="index.html">
-      <img src="images/strata-logo.png" alt="Orji Strategies" />
-    </a>
-    <div class="desktop-nav">
-      <a href="index.html">Home</a>
-      <a href="who-we-help.html">Who We Help</a>
-      <div class="drop">
-        <a href="our-methods.html">Our Methods <i class="fas fa-chevron-down"></i></a>
-        <div class="drop-menu">
-          <a href="our-methods.html">The Small Room</a>
-          <a href="our-methods.html">LegacyOS™</a>
-          <a href="our-methods.html">HEARTH™</a>
-          <a href="our-methods.html">Assessments</a>
-          <a href="our-methods.html">Training &amp; Certification</a>
-        </div>
-      </div>
-      <div class="drop">
-        <a href="#">Services <i class="fas fa-chevron-down"></i></a>
-        <div class="drop-menu">
-          <a href="the-small-room-consulting-service.html">The Small Room Consulting</a>
-          <a href="legacy-os-service.html">LegacyOS™ Consulting</a>
-          <a href="training-and-workshop-service.html">Training &amp; Workshops</a>
-          <a href="speaking-and-advisory.html">Speaking &amp; Advisory</a>
-        </div>
-      </div>
-      <!-- <div class="drop">
+    <nav class="topnav" id="topnav">
+        <a class="brand" href="index.html">
+            <img src="images/strata-logo.png" alt="Orji Strategies" />
+        </a>
+        <div class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="who-we-help.html">Who We Help</a>
+            <div class="drop">
+                <a href="our-methods.html" class="active">Our Methods <i class="fas fa-chevron-down"></i></a>
+                <div class="drop-menu">
+                    <a href="our-methods.html">The Small Room</a>
+                    <a href="our-methods.html">Root-to-Crown Method™</a>
+                    <a href="our-methods.html">HEARTH™</a>
+                    <a href="our-methods.html">Assessments</a>
+                    <a href="our-methods.html">Training &amp; Certification</a>
+                </div>
+            </div>
+            <div class="drop">
+                <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="drop-menu">
+                    <a href="the-small-room-consulting-service.html">The Small Room Consulting</a>
+                    <a href="root-to-crown-method.html">Root-to-Crown Method™ Consulting</a>
+                    <a href="training-and-workshop-service.html">Training &amp; Workshops</a>
+                    <a href="speaking-and-advisory.html">Speaking &amp; Advisory</a>
+                </div>
+            </div>
+            <!-- <div class="drop">
         <a href="#">Books &amp; Resources <i class="fas fa-chevron-down"></i></a>
         <div class="drop-menu">
           <a href="#">Books</a>
@@ -417,52 +462,52 @@
           <a href="#">Resource Library</a>
         </div>
       </div> -->
-      <a href="insights.html">Insights</a>
-      <a href="about-us.html" class="active">About</a>
-      <a href="contact-us.html">Contact</a>
-      <div class="nav-icons">
-        <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
-        <a href="#" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a>
-      </div>
-      <a class="nav-cta" href="get-started.html">Schedule a Consultation</a>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+            <a href="insights.html">Insights</a>
+            <a href="about-us.html">About</a>
+            <a href="contact-us.html">Contact</a>
+            <div class="nav-icons">
+                <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="#" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <a class="nav-cta" href="get-started.html">Schedule a Consultation</a>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
-  </nav>
+    </nav>
 
-  <!-- ===== MOBILE NAV ===== -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="index.html">Home</a>
-    <a href="who-we-help.html">Who We Help</a>
-    <a href="our-methods.html">Our Methods</a>
-    <a class="sub" href="our-methods.html">The Small Room</a>
-    <a class="sub" href="our-methods.html">LegacyOS™</a>
-    <a class="sub" href="our-methods.html">HEARTH™</a>
-    <a class="sub" href="our-methods.html">Assessments</a>
-    <a class="sub" href="our-methods.html">Training &amp; Certification</a>
-    <a href="#">Services</a>
-    <a class="sub" href="the-small-room-consulting-service.html">The Small Room Consulting</a>
-    <a class="sub" href="legacy-os-service.html">LegacyOS™ Consulting</a>
-    <a class="sub" href="training-and-workshop-service.html">Training &amp; Workshops</a>
-    <a class="sub" href="speaking-and-advisory.html">Speaking &amp; Advisory</a>
-    <!-- <a href="#">Books &amp; Resources</a>
+    <!-- ===== MOBILE NAV ===== -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="who-we-help.html">Who We Help</a>
+        <a href="our-methods.html">Our Methods</a>
+        <a class="sub" href="our-methods.html">The Small Room</a>
+        <a class="sub" href="our-methods.html">Root-to-Crown Method™</a>
+        <a class="sub" href="our-methods.html">HEARTH™</a>
+        <a class="sub" href="our-methods.html">Assessments</a>
+        <a class="sub" href="our-methods.html">Training &amp; Certification</a>
+        <a href="#">Services</a>
+        <a class="sub" href="the-small-room-consulting-service.html">The Small Room Consulting</a>
+        <a class="sub" href="root-to-crown-method.html">Root-to-Crown Method™ Consulting</a>
+        <a class="sub" href="training-and-workshop-service.html">Training &amp; Workshops</a>
+        <a class="sub" href="speaking-and-advisory.html">Speaking &amp; Advisory</a>
+        <!-- <a href="#">Books &amp; Resources</a>
     <a class="sub" href="#">Books</a>
     <a class="sub" href="#">Workbooks</a>
     <a class="sub" href="#">Toolkits</a>
     <a class="sub" href="#">Assessments</a>
     <a class="sub" href="#">Resource Library</a> -->
-    <a href="insights.html">Insights</a>
-    <a href="about-us.html">About</a>
-    <a href="contact-us.html">Contact</a>
-    <div style="display: flex; gap: 20px; padding: 16px 0 8px; border-bottom: 1px solid rgba(178,138,76,0.06);">
-      <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-search"></i></a>
-      <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-shopping-cart"></i></a>
+        <a href="insights.html">Insights</a>
+        <a href="about-us.html">About</a>
+        <a href="contact-us.html">Contact</a>
+        <div style="display: flex; gap: 20px; padding: 16px 0 8px; border-bottom: 1px solid rgba(178,138,76,0.06);">
+            <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-search"></i></a>
+            <a href="#" style="border: none; padding: 0; font-size: 18px; color: var(--muted-gray);"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <a href="get-started.html" style="color: var(--gold); font-weight: 600; margin-top: 8px;">Schedule a Consultation</a>
     </div>
-    <a href="get-started.html" style="color: var(--gold); font-weight: 600; margin-top: 8px;">Schedule a Consultation</a>
-  </div>
     <!-- ===== MAIN ===== -->
     <main>
 
@@ -488,8 +533,8 @@
                         <button class="tab-btn active" data-tab="smallroom">
                             <span class="tab-label">The Small Room <small>Fairness</small></span>
                         </button>
-                        <button class="tab-btn" data-tab="legacyos">
-                            <span class="tab-label">LegacyOS™ <small>Continuity</small></span>
+                        <button class="tab-btn" data-tab="root-to-crown">
+                            <span class="tab-label">Root-to-Crown Method™ <small>Continuity</small></span>
                         </button>
                         <button class="tab-btn" data-tab="hearth">
                             <span class="tab-label">HEARTH™ <small>Human-centered</small></span>
@@ -513,7 +558,8 @@
                             </div>
                             <div class="method-body">
                                 <div class="text-content">
-                                    <p>A structured method for fair hearings, workplace investigations, due process, credibility assessment, and defensible decision-making. The Small Room provides a clear, repeatable framework for investigating complaints, conducting hearings, and making decisions that stand up to scrutiny.</p>
+                                    <p>A structured method for fair hearings, workplace investigations, due process, credibility assessment, and defensible decision-making. The Small Room provides a clear, repeatable framework for investigating complaints,
+                                        conducting hearings, and making decisions that stand up to scrutiny.</p>
                                     <ul>
                                         <li><i class="fas fa-circle"></i> Workplace investigation planning &amp; review</li>
                                         <li><i class="fas fa-circle"></i> Procedural fairness assessment</li>
@@ -537,34 +583,63 @@
                             </div>
                         </div>
 
-                        <!-- ===== TAB 2: LegacyOS™ ===== -->
-                        <div class="panel-content" id="panel-legacyos">
+                        <!-- ===== TAB 2: Root-to-Crown Method™ ===== -->
+                        <div class="panel-content" id="panel-root-to-crown">
                             <div class="method-header">
                                 <span class="badge">Leadership continuity</span>
-                                <h2>Legacy<em>OS™</em></h2>
+                                <h2>Root-to-Crown <em>Method™</em></h2>
                             </div>
+
                             <div class="method-body">
                                 <div class="text-content">
-                                    <p>A comprehensive operating system for founder independence, succession, governance, leadership development, and knowledge transfer. LegacyOS™ helps you build an organization that can endure beyond any single leader — including you.</p>
-                                    <ul>
-                                        <li><i class="fas fa-circle"></i> Founder Dependency Assessment™</li>
-                                        <li><i class="fas fa-circle"></i> Founder Mortality Test</li>
-                                        <li><i class="fas fa-circle"></i> Institutional Knowledge Audit</li>
-                                        <li><i class="fas fa-circle"></i> Succession-readiness assessment</li>
-                                        <li><i class="fas fa-circle"></i> Governance design &amp; leadership pipeline</li>
-                                    </ul>
-                                    <a class="action-link" href="contact-us.html">Explore LegacyOS™ →</a>
+                                    <p>
+                                        A comprehensive operating system for founder independence, succession, governance, leadership development, and knowledge transfer. The Root-to-Crown Method™ helps you build an organization that can endure beyond any single leader — including you.
+                                    </p>
+
+                                    <div class="stage-grid">
+                                        <article class="stage-card">
+                                            <span class="stage-number">01</span>
+                                            <h4>Roots</h4>
+                                            <p>The foundational layer — values, purpose, founder's original intent, core identity, and the unwritten rules that shape culture. This stage focuses on excavating and documenting the deep-rooted assumptions, beliefs,
+                                                and principles that have driven the organization since inception. It's about understanding what must be preserved and what must evolve.</p>
+                                        </article>
+
+                                        <article class="stage-card">
+                                            <span class="stage-number">02</span>
+                                            <h4>Trunk</h4>
+                                            <p>The structural core — governance, decision rights, roles, and the operating model. This stage builds the durable infrastructure that carries the organization's identity into the future: board structures, leadership
+                                                pipelines, delegation frameworks, and the systems that enable the founder to step back without destabilizing the whole.</p>
+                                        </article>
+
+                                        <article class="stage-card">
+                                            <span class="stage-number">03</span>
+                                            <h4>Branches</h4>
+                                            <p>The extending capabilities — leadership development, knowledge transfer, and the spread of institutional wisdom across teams and functions. This stage ensures that critical knowledge is distributed, not hoarded,
+                                                and that emerging leaders are equipped to carry the organization's DNA into new contexts.</p>
+                                        </article>
+
+                                        <article class="stage-card">
+                                            <span class="stage-number">04</span>
+                                            <h4>Crown</h4>
+                                            <p>The outward expression and legacy — reputation, market position, stakeholder trust, and the organization's enduring impact. This stage focuses on what the organization is known for, how it shows up in the world,
+                                                and how it continues to thrive and adapt beyond any single leader's tenure.</p>
+                                        </article>
+                                    </div>
+
+                                    <a class="action-link" href="contact-us.html">Explore Root-to-Crown Method™ →</a>
                                 </div>
+
                                 <div class="image-content">
-                                    <img src="images/legacy-img.png" alt="LegacyOS method" loading="lazy">
+                                    <img src="images/legacy-img.png" alt="Root-to-Crown Method" loading="lazy">
                                 </div>
                             </div>
+
                             <div class="method-footer">
                                 <div class="tag-group">
-                                    <span>Succession</span>
-                                    <span>Governance</span>
-                                    <span>Continuity</span>
-                                    <span>Knowledge Transfer</span>
+                                    <span>Roots</span>
+                                    <span>Trunk</span>
+                                    <span>Branches</span>
+                                    <span>Crown</span>
                                 </div>
                             </div>
                         </div>
@@ -577,7 +652,9 @@
                             </div>
                             <div class="method-body">
                                 <div class="text-content">
-                                    <p>A human-centered approach to workplace investigations and procedural fairness that builds trust and protects institutional reputation. HEARTH™ prioritizes the dignity of all participants while maintaining rigorous investigative standards.</p>
+                                    <p>A human-centered approach to workplace investigations and procedural fairness that builds trust and protects institutional reputation. HEARTH™ prioritizes the dignity of all participants while maintaining rigorous investigative
+                                        standards.
+                                    </p>
                                     <ul>
                                         <li><i class="fas fa-circle"></i> Human-centered investigation framework</li>
                                         <li><i class="fas fa-circle"></i> Trust-building in sensitive processes</li>
@@ -656,7 +733,7 @@
                                     <span class="price-tag">Virtual · In-person</span>
                                 </div>
                                 <div class="training-item">
-                                    <h4>LegacyOS™ Practitioner Certification</h4>
+                                    <h4>Root-to-Crown Method™ Practitioner Certification</h4>
                                     <p>Become certified to guide organizations through founder independence, succession, and governance design.</p>
                                     <span class="price-tag">Certification pathway</span>
                                 </div>
@@ -683,8 +760,10 @@
                             </div>
                         </div>
 
-                    </div><!-- /tab-content-panel -->
-                </div><!-- /methods-tab-wrapper -->
+                    </div>
+                    <!-- /tab-content-panel -->
+                </div>
+                <!-- /methods-tab-wrapper -->
 
             </div>
         </section>
@@ -722,15 +801,15 @@
 
             <!-- Column 2: Quick Links -->
             <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="who-we-help.html">Who We Help</a>
-        <a href="the-small-room-consulting-service.html">Our Methods</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="get-started.html">Get Started</a>
-      </div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="who-we-help.html">Who We Help</a>
+                <a href="the-small-room-consulting-service.html">Our Methods</a>
+                <a href="insights.html">Insights</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="get-started.html">Get Started</a>
+            </div>
 
             <!-- Column 3: Contact -->
             <div class="footer-col">
@@ -813,7 +892,7 @@
         const tabBtns = document.querySelectorAll('.tab-btn');
         const panels = {
             smallroom: document.getElementById('panel-smallroom'),
-            legacyos: document.getElementById('panel-legacyos'),
+            'root-to-crown': document.getElementById('panel-root-to-crown'),
             hearth: document.getElementById('panel-hearth'),
             assessments: document.getElementById('panel-assessments'),
             training: document.getElementById('panel-training')
@@ -841,9 +920,13 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.10, rootMargin: '0px 0px -30px 0px' });
+        }, {
+            threshold: 0.10,
+            rootMargin: '0px 0px -30px 0px'
+        });
         reveals.forEach(el => revealObserver.observe(el));
     </script>
 
 </body>
-</html>>
+
+</html>
